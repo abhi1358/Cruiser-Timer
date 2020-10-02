@@ -1,14 +1,14 @@
-chrome.runtime.getBackgroundPage(function(bg){
-    if(bg.sessionDataHTML){
-        document.body.innerHTML = bg.sessionDataHTML; 
-    }
-    setInterval(function(){
-        bg.sessionDataHTML = document.body.innerHTML
-    },1000);    
+// chrome.runtime.getBackgroundPage(function(bg){
+//     if(bg.sessionDataHTML){
+//         document.body.innerHTML = bg.sessionDataHTML; 
+//     }
+//     setInterval(function(){
+//         bg.sessionDataHTML = document.body.innerHTML
+//     },1000);    
 
-    //do the rest of your work here.
+//     //do the rest of your work here.
     
-});
+// });
 
 
 
@@ -20,9 +20,9 @@ const mins=document.querySelector('.mins');
 const secs=document.querySelector('.secs');
 
 const items = document.querySelector('ol');
-console.log(items);  
+// console.log(items);  
 
-console.log(hrs,mins,secs);
+// console.log(hrs,mins,secs);
 let cruiserTimer;
 let csecs=0,cmins=0,chrs=0;
 let dsecs,dmins,dhrs;
@@ -33,8 +33,8 @@ startTimer.addEventListener('click',()=> {
         const item = document.createElement('li');
         item.textContent=`${dhrs}:${dmins}:${dsecs}`;
         items.append(item);
-        clearInterval(cruiserTimer);
-        startTimer.textContent="Start";
+        // clearInterval(cruiserTimer);
+        // startTimer.textContent="Start";
         return;
     }
     
