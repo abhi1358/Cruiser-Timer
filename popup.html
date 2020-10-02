@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CruiserTimer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+            min-width: 200px;
+        }
+        .container{
+            width: fit-content;
+        }
+        .value{
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .time{
+            padding-top: 2px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:black;
+            font-size: medium;
+        }
+        .results{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-1 bg-white text-center">
+        <div class="time">
+            <p><snap class="hrs value">00</snap>hrs <snap class="mins value">00</snap>mins <snap class="secs value">00</snap>secs</p>
+        </div>
+        <button class="btn btn-primary start">Start</button>
+        <button class="btn btn-warning reset">Reset</button>
+        <button class="btn btn-dark dashboard">Dashboard</button>
+    </div>
+    <!-- results -->
+    <div class="results mb-2 bg-secondary text-white">
+        <div class="container my-5">
+            <ol>
+            </ol>
+        </div>
+    </div>
+    <script src="content.js"></script>
+</body>
+</html>
