@@ -60,6 +60,11 @@ startTimer.addEventListener('click',()=> {
         secs.textContent = dsecs;
         mins.textContent = dmins;
         hrs.textContent  = dhrs;
+        if(cmins>5) {
+            secs.color = "red";
+            mins.color = "red";
+            hrs.color = "red";
+        }
     },1000);
     startTimer.textContent="Mark";
 });
@@ -76,6 +81,9 @@ resetTimer.addEventListener('click',()=>{
     hrs.textContent="00";
     mins.textContent="00";
     secs.textContent="00";
+    secs.color = "black";
+    mins.color = "black";
+    hrs.color = "black";
 });
 
 const dashboard = document.querySelector('.dashboard');
