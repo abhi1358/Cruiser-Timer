@@ -59,6 +59,11 @@ startTimer.addEventListener('click',()=> {
         secs.textContent = dsecs;
         mins.textContent = dmins;
         hrs.textContent  = dhrs;
+        if(cmins>5) {
+            secs.color = "red";
+            mins.color = "red";
+            hrs.color = "red";
+        }
     },1000);
     startTimer.textContent="Mark";
 });
@@ -76,6 +81,9 @@ resetTimer.addEventListener('click',()=>{
     mins.textContent="00";
     secs.textContent="00";
 });
+
+//add binkers in timer just before 1 min
+
 
 const dashboard = document.querySelector('.clear');
 dashboard.addEventListener('click',()=>{
