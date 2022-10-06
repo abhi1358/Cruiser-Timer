@@ -27,7 +27,7 @@ let cruiserTimer;
 let csecs=0,cmins=0,chrs=0;
 let dsecs,dmins,dhrs;
 startTimer.addEventListener('click',()=> {
-    // alert("hi");
+    alert("Adding event Listener");
     
     if(startTimer.textContent=="Mark") {
         const item = document.createElement('li');
@@ -39,7 +39,7 @@ startTimer.addEventListener('click',()=> {
     }
     
     cruiserTimer = setInterval(()=>{
-        // alert("hi");
+        alert("setting Interval");
         // console.log(chrs,cmins,csecs);
         csecs++;
         if(csecs==60) {
