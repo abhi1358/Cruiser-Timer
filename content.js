@@ -21,14 +21,14 @@ const mins=document.querySelector('.mins');
 const secs=document.querySelector('.secs');
 
 const items = document.querySelector('ol');
-// console.log(items);  
+console.log(items);  
 
-// console.log(hrs,mins,secs);
+console.log(hrs,mins,secs);
 let cruiserTimer;
 let csecs=0,cmins=0,chrs=0;
 let dsecs,dmins,dhrs;
 startTimer.addEventListener('click',()=> {
-    // alert("hi");
+    alert("adding event Listener");
     
     if(startTimer.textContent=="Mark") {
         const item = document.createElement('li');
@@ -40,7 +40,7 @@ startTimer.addEventListener('click',()=> {
     }
     
     cruiserTimer = setInterval(()=>{
-        // alert("hi");
+        alert("setting interval");
         // console.log(chrs,cmins,csecs);
         csecs++;
         if(csecs==60) {
